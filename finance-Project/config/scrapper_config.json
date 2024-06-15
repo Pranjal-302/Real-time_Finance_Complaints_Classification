@@ -1,0 +1,8 @@
+{
+ "from_date": "04-05-2023",
+ "to_date": "05-05-2023",
+ "download_dir": "/home/dhanshree/Downloads/",
+  "scrapped_dir": "/home/dhanshree/Desktop/BTech_Project/finance-latest/finance-Project/scrapped_data/",
+  "url": "https://www.consumerfinance.gov/data-research/consumer-complaints/search/?chartType=line&dateInterval=Month&dateRange=3y&date_received_max=2023-09-21&date_received_min=2020-09-21",
+"windowshuttime":2000
+}

@@ -1,0 +1,8 @@
+{
+ "from_date": "28-08-2023",
+ "to_date": "10-09-2023",
+ "download_dir": "C:/Users/shubh/Downloads/",
+  "scrapped_dir": "../../scrapped_data/",
+  "url": "https://www.consumerfinance.gov/data-research/consumer-complaints/search/?chartType=line&dateInterval=Month&dateRange=3y&date_received_max=2023-09-21&date_received_min=2020-09-21",
+"windowshuttime":20
+}

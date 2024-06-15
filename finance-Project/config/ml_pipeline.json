@@ -1,0 +1,4 @@
+{
+"processed_data_path":"../../data/processed_data.csv",
+"train_size":0.8
+}

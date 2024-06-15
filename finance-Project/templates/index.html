@@ -1,0 +1,108 @@
+
++<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Complaint Classification</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: url('https://img.freepik.com/free-vector/white-abstract-background-design_23-2148825582.jpg?size=626&ext=jpg&ga=GA1.1.1222169770.1702339200&semt=ais') no-repeat center center fixed;
+            background-size: cover;
+            color: #ffffff; /* White text for better visibility on a dark background */
+            text-align: center;
+            margin: 50px;
+        }
+
+        h1 {
+            color: #ffffff; /* White heading text */
+            font-size: 36px; /* Adjust the font size as needed */
+            margin-bottom: 20px;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+-+            display: block;
+            margin-bottom: 8px;
+            color: #333; /* Dark label text */
+            font-weight: bold;
+        }
+
+        input {
+            width: 100%; /* Four times bigger */
+            padding: 10px;
+            height: 100px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #0066cc;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #004080;
+        }
+
+        p {
+            margin-top: 20px;
+            font-weight: bold;
+            color: #0066cc;
+        }
+
+        .error {
+            color: #ff0000;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        
+        .prediction-box {
+            box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+            padding: 10px;
+            border-radius: 4px;
+            margin-top: 20px;
+        }
+
+        
+  h1 {
+    color: blue;
+  }
+    </style>
+</head>
+<body>
+    <h1>Finance Complaint Classification</h1>
+    <form action="/predict" method="post">
+        <label for="text" style="color: #0066cc;">Enter your financial complaint:</label>
+        <input type="text" id="text" name="text" required autocomplete="off">
+        <button type="submit">Predict</button>
+    </form>
+
+    {% if prediction %}
+        <div class="prediction-box">
+            <p>Prediction: {{ prediction }}</p>
+        </div>
+    {% endif %}
+
+    {% if error %}
+        <p class="error">Error: {{ error }}</p>
+    {% endif %}
+</body>
+</html>
+
+

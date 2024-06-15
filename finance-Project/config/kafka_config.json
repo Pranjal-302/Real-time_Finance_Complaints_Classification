@@ -1,0 +1,5 @@
+{
+"kafka_topic":"csv-to-json",
+"bootstrap_servers_IP_port":"localhost:9092",
+"consumer_group_id":"myconsumer"
+}
